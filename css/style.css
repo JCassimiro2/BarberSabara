@@ -383,10 +383,7 @@ nav a:hover {
   .direita {
     align-items: center;
     text-align: center;
-    padding: 0 1em; /* Adiciona espaçamento lateral */
-    margin: 0 auto;  /* Centraliza e impede que grude na borda */
-    width: 100%;
-    box-sizing: border-box; /* Garante que o padding conte dentro da largura */
-  }  
+    padding-right: 0;
+  }
 }
 
