@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BarberSabará</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="reveal">
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Galeria</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="loja-servicos reveal">
+    <div class="card">
+      <h2>Loja</h2>
+      <p>Descrição da loja...</p>
+    </div>
+    <div class="card">
+      <h2>Serviços</h2>
+      <p>Descrição dos serviços...</p>
+    </div>
+  </section>
+
+  <section class="sobre reveal">
+    <h2>Sobre Mim</h2>
+    <div class="sobre-conteudo">
+      <div class="foto-sobre"></div>
+      <div class="info-sobre">
+        <p><strong>Nome:</strong> Matheus Sabará </p>
+        <p><strong>Idade:</strong> 23 anos</p>
+        <p><strong>Tempo na profissão:</strong> 7 anos</p>
+      </div>
+    </div>
+    <h2>Veja um pouco mais sobre mim</h2>
+    <div class="Sobre-mim">
+      Gosto de cuidar do meu visual, saúde e me divertir com os amigos, <br> sou focado em resultados e desempenho,
+      tenho como objetivo <br> ser reconhecido profissionalmente, e procuro sempre aprendizado <br> para conseguir realizar o
+      que meus clientes desejam, <br> sempre deixando-os avontade em meu espaço de trabalho
+    </div>
+  </section>
+
+  <h2 class="titulo-centro reveal">Sobre nosso estabelecimento</h2>
+
+  <div class="estabelecimento-conteudo reveal">
+    <div class="foto-estab-esquerda"></div>
+
+    <div class="info-estab">
+      <p></p>
+    </div>
+  </div>
+
+  <div class="foto-estab-direita-container reveal">
+    <div class="foto-estab-direita"></div>
+  </div>
+
+  <section class="galeria reveal">
+    <h2>Nossa Galeria</h2>
+    <div class="filtros">
+      <div>Americano</div>
+      <div>Mid-fade</div>
+      <div>Low-fade</div>
+      <div>Militar</div>
+    </div>
+    <div class="fotos">
+      <div class="foto"></div>
+      <div class="foto"></div>
+      <div class="foto"></div>
+      <div class="foto"></div>
+    </div>
+  </section>
+
+  <section class="mensagem reveal">
+    <h2>Deixe uma mensagem</h2>
+    <form>
+      <input type="text" placeholder="Nome" />
+      <textarea placeholder="Mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p>Caso queira mais detalhes, veja nosso contato <a href="#">aqui</a>.</p>
+  </section>
+
+  <footer class="reveal">
+    <div class="footer-container">
+      <div class="footer-item">
+        <span>📷</span>
+        <a href="#" target="_blank">https://www.instagram.com/msabara_/</a>
+      </div>
+
+      <p class="footer-mensagem">Venha conhecer<br>nosso estabelecimento!</p>
+
+      <div class="footer-item">
+        <span>📍</span>
+        <a href="#" target="_blank">Av Curitiba , 725 (sala01)</a>
+      </div>
+    </div>
+  </footer>    
+
+  <!-- SCRIPT DE ANIMAÇÃO -->
+  <script>
+    function reveal() {
+      var reveals = document.querySelectorAll('.reveal');
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 100;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add('active');
+        } else {
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+
+    window.addEventListener('scroll', reveal);
+    reveal(); // ativa no carregamento
+  </script>
+
+</body>
+</html>

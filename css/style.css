@@ -1,0 +1,345 @@
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  
+  header {
+    background: #333;
+    color: white;
+    padding: 1em;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .loja-servicos {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    background: #f4f4f4;
+  }
+  
+  .card {
+    width: 40%;
+    background: white;
+    padding: 1em;
+    border: 1px solid #ccc;
+  }
+  
+  .sobre, .estabelecimento, .mensagem, .galeria {
+    padding: 2em;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .caixa {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+  }
+  
+  .galeria .filtros, .galeria .fotos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+  }
+  
+  .foto {
+    width: 100px;
+    height: 100px;
+    background: #ddd;
+  }
+  
+  .mensagem form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mensagem input,
+  .mensagem textarea {
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .mensagem button {
+    padding: 0.4em 1.2em;
+    font-size: 0.9em;
+    background-color: wh;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .mensagem button:hover {
+    background-color: #555;
+  }
+  
+  input, textarea {
+    padding: 0.5em;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  footer {
+    background: #111;
+    padding: 1.5em 1em;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  } 
+
+  .footer-mensagem {
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-bottom: 1em;
+  }  
+  
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    background-color: #2c2c2c;
+    color: white;
+    border-radius: 12px;
+    width: 650px;   /* ✅ largura fixa */
+    height: 90px;   /* ✅ altura */
+    font-size: 0.9em;
+  }
+  
+  
+  .footer-item a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .esquerda {
+  background-color: #2c2c2c;
+  align-items: flex-start;
+  text-align: left;
+}
+  
+.centro {
+  background-color: #333;
+  align-items: center;
+  text-align: center;
+}
+
+
+  .direita {
+    background: transparent;
+    align-items: flex-end;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+  }    
+  
+  .social {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 1em;
+  }
+  
+  .icon {
+    font-size: 1.5em;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+  }
+  
+  .sobre h2,
+.estabelecimento h2,
+.galeria h2,
+.mensagem h2 {
+  text-align: center;
+}
+
+.esquerda, .centro {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-mensagem {
+  text-align: center;
+  padding: 1em 0;
+  color: white;
+  font-size: 1.1em;
+}
+
+.footer-mensagem {
+  text-align: center;
+  color: white;
+  margin-top: 1em;
+  font-size: 1.1em;
+}
+
+.sobre-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.foto-sobre {
+  width: 200px;
+  height: 200px;
+  background: #ccc;
+  border-radius: 8px;
+}
+
+.estabelecimento {
+  padding: 2em;
+}
+
+.titulo-centro {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+.estabelecimento-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 1em 2em;
+  justify-content: flex-start; /* 👈 isso tira do centro */
+}
+
+.foto-estab-esquerda {
+  width: 250px;
+  height: 250px;
+  background-color: #ccc;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.info-estab {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  font-size: 1em;
+  max-width: 500px;
+}
+
+.foto-estab-direita-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em 2em;
+}
+
+.foto-estab-direita {
+  width: 220px;
+  height: 220px;
+  background-color: #bbb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+} 
+
+.Sobre-mim{
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.sobre h2:nth-of-type(2) {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .loja-servicos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 1em;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+  }
+
+  .galeria .filtros,
+  .galeria .fotos {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  form {
+    width: 100%;
+    align-items: center;
+  }
+
+  input, textarea {
+    width: 90%;
+  }
+
+  .social {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
