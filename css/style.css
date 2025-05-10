@@ -1,193 +1,192 @@
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-  }
-  
-  header {
-    background: #333;
-    color: white;
-    padding: 1em;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .loja-servicos {
-    display: flex;
-    justify-content: space-around;
-    padding: 2em;
-    background: #f4f4f4;
-  }
-  
-  .card {
-    width: 40%;
-    background: white;
-    padding: 1em;
-    border: 1px solid #ccc;
-  }
-  
-  .sobre, .estabelecimento, .mensagem, .galeria {
-    padding: 2em;
-  }
-  
-  .info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .caixa {
-    width: 100px;
-    height: 100px;
-    background: #ccc;
-  }
-  
-  .galeria .filtros, .galeria .fotos {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1em;
-  }
-  
-  .foto {
-    width: 100px;
-    height: 100px;
-    background: #ddd;
-  }
-  
-  .mensagem form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .mensagem input,
-  .mensagem textarea {
-    width: 90%;
-    max-width: 400px;
-    margin-bottom: 1em;
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .mensagem button {
-    padding: 0.4em 1.2em;
-    font-size: 0.9em;
-    background-color: wh;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .mensagem button:hover {
-    background-color: #555;
-  }
-  
-  input, textarea {
-    padding: 0.5em;
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  footer {
-    background: #111;
-    padding: 1.5em 1em;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
-  } 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
 
-  .footer-mensagem {
-    width: 100%;
-    text-align: center;
-    color: white;
-    margin-bottom: 1em;
-  }  
-  
-  .footer-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5em;
-    background-color: #2c2c2c;
-    color: white;
-    border-radius: 12px;
-    width: 100%;
-    max-width: 650px;
-    height: 90px;
-    font-size: 0.9em;
-    margin: 0 auto;
-  }
-  
-  .footer-item a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .footer-item a:hover {
-    text-decoration: underline;
-  }
-  
-  .esquerda {
+header {
+  background: #333;
+  color: white;
+  padding: 1em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.loja-servicos {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+  background: #f4f4f4;
+}
+
+.card {
+  width: 40%;
+  background: white;
+  padding: 1em;
+  border: 1px solid #ccc;
+}
+
+.sobre, .estabelecimento, .mensagem, .galeria {
+  padding: 2em;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.caixa {
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+}
+
+.galeria .filtros, .galeria .fotos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+.foto {
+  width: 100px;
+  height: 100px;
+  background: #ddd;
+}
+
+.mensagem form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mensagem input,
+.mensagem textarea {
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.mensagem button {
+  padding: 0.4em 1.2em;
+  font-size: 0.9em;
+  background-color: wh;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.mensagem button:hover {
+  background-color: #555;
+}
+
+input, textarea {
+  padding: 0.5em;
+  width: 100%;
+  max-width: 400px;
+}
+
+footer {
+  background: #111;
+  padding: 1.5em 1em;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-mensagem {
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  background-color: #2c2c2c;
+  color: white;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 650px;
+  height: 90px;
+  font-size: 0.9em;
+  margin: 0 auto;
+}
+
+.footer-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-item a:hover {
+  text-decoration: underline;
+}
+
+.esquerda {
   background-color: #2c2c2c;
   align-items: flex-start;
   text-align: left;
 }
-  
+
 .centro {
   background-color: #333;
   align-items: center;
   text-align: center;
 }
 
+.direita {
+  background: transparent;
+  align-items: flex-end;
+  text-align: right;
+  padding-right: 5%;
+  margin: 0;
+}
 
-  .direita {
-    background: transparent;
-    align-items: flex-end;
-    text-align: right;
-    padding: 0;
-    margin: 0;
-  }    
-  
-  .social {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-    margin-top: 1em;
-  }
-  
-  .icon {
-    font-size: 1.5em;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5em 1em;
-    transition: all 0.3s ease;
-    border-radius: 5px;
-  }
-  
-  nav a:hover {
-    background-color: white;
-    color: #333;
-    border: 1px solid #ccc;
-  }
-  
-  .sobre h2,
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 1em;
+}
+
+.icon {
+  font-size: 1.5em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.sobre h2,
 .estabelecimento h2,
 .galeria h2,
 .mensagem h2 {
@@ -205,13 +204,6 @@
   text-align: center;
   padding: 1em 0;
   color: white;
-  font-size: 1.1em;
-}
-
-.footer-mensagem {
-  text-align: center;
-  color: white;
-  margin-top: 1em;
   font-size: 1.1em;
 }
 
@@ -240,30 +232,34 @@
   margin-bottom: 1em;
 }
 
+/* Ajustes para os blocos de estabelecimento */
 .estabelecimento-conteudo {
   display: flex;
   align-items: center;
-  gap: 2em;
-  padding: 1em 2em;
-  justify-content: flex-start; /* 👈 isso tira do centro */
+  gap: 2em; /* Mantém a distância entre os blocos */
+  padding: 0 5%; /* Adiciona padding nas laterais para dar espaço */
+  max-width: 1200px; /* Define um limite máximo de largura */
 }
 
 .foto-estab-esquerda {
-  width: 250px;
-  height: 250px;
+  width: 290px;
+  height: 290px;
   background-color: #ccc;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  margin-left: 7%;  /* distância da borda esquerda */
 }
 
+/* Ajuste do conteúdo da informação */
 .info-estab {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  font-size: 1em;
+  font-size: 1.1em;
   max-width: 500px;
 }
 
+/* Ajustes no conteúdo da foto à direita */
 .foto-estab-direita-container {
   display: flex;
   justify-content: flex-end;
@@ -271,14 +267,15 @@
 }
 
 .foto-estab-direita {
-  width: 220px;
-  height: 220px;
+  width: 290px;
+  height: 290px;
   background-color: #bbb;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-} 
+  margin-right: 7%; /* distância da borda direita */
+}
 
-.Sobre-mim{
+.Sobre-mim {
   text-align: center;
   font-size: 1.5em;
   margin-bottom: 1em;
@@ -300,6 +297,7 @@
   transform: translateY(0);
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -344,14 +342,37 @@
     gap: 1em;
   }
 
+  footer {
+    padding: 1em 0.5em;
+  }
+
+  .footer-container {
+    padding: 0 1em;
+    flex-direction: column;
+  }
+
+  .footer-item {
+    width: 100%;
+    max-width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+
+  .footer-item a {
+    font-size: 0.9em;
+  }
+
   .estabelecimento-conteudo {
     flex-direction: column;
     align-items: center;
+    gap: 1.5em;
+    padding: 0 10%; /* mais espaço nas laterais no mobile */
   }
 
   .foto-estab-esquerda,
   .foto-estab-direita {
-    width: 90%;
+    width: 80%; /* diminui no mobile */
+    max-width: 300px;
     height: auto;
   }
 
@@ -359,5 +380,13 @@
     max-width: 90%;
     text-align: center;
   }
+  .direita {
+    align-items: center;
+    text-align: center;
+    padding: 0 1em; /* Adiciona espaçamento lateral */
+    margin: 0 auto;  /* Centraliza e impede que grude na borda */
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding conte dentro da largura */
+  }  
 }
 
