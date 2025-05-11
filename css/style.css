@@ -1,14 +1,25 @@
+html, body {
+  height: 100%; /* Garante que a altura da página ocupe toda a tela */
+  margin: 0;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: white;
+  padding-top: 80px; /* ajuste conforme a altura do seu header */
+  min-height: 100vh; /* garante que o body ocupe ao menos a altura total da tela */
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  background: #333;
-  color: white;
-  padding: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 nav ul {
@@ -28,7 +39,7 @@ nav ul li {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 2em;
-  background: #f4f4f4;
+  background-color: #2b2b2b !important; /* Cor de fundo mais clara e com !important */
   gap: 1em;
 }
 
@@ -95,11 +106,12 @@ nav ul li {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .mensagem button:hover {
   background-color: #555;
+  transform: scale(1.05); /* Leve aumento no botão */
 }
 
 input, textarea {
@@ -112,6 +124,10 @@ footer {
   background: #111;
   padding: 2em 1em;
   color: white;
+  margin-top: auto; /* Empurra o footer para o final da tela */
+  width: 100%;
+  position: relative;
+  bottom: 0;
 }
 
 .footer-container {
@@ -146,9 +162,12 @@ footer {
 .footer-item a {
   color: white;
   text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .footer-item a:hover {
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.2); /* Fundo mais suave */
   text-decoration: underline;
 }
 
@@ -161,7 +180,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.2); /* Fundo levemente transparente */
   color: #333;
   border: 1px solid #ccc;
 }
@@ -251,6 +270,10 @@ nav a:hover {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 768px) {
