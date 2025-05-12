@@ -75,12 +75,119 @@ nav ul li {
   margin-top: 1em;
 }
 
-.foto {
-  width: 120px;
-  height: 120px;
-  background: #ddd;
-  border-radius: 0.5em;
+.scroll-row {
+  gap: 1rem; /* ajuste como preferir: 1rem, 1.5rem, etc. */
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
 }
+
+.galeria {
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+}
+
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.carousel {
+  display: flex;
+  gap: 30px;
+  padding: 20px 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  transform: scale(1.2); /* Aumenta o item ativo */
+}
+
+.carousel-item-next, .carousel-item-prev {
+  transform: scale(0.8); /* Diminui os itens ao lado */
+}
+
+
+.card {
+  min-width: 200px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  transition: transform 0.3s, transform 0.5s ease-out;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.card p {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.card.active {
+  transform: scale(1.2);  
+  z-index: 1;            
+}
+
+.card.inactive {
+  transform: scale(0.8);  
+  opacity: 0.7;           
+}
+
+.carousel-control-prev-icon {
+  background-color: #1600a7 ;
+   border-radius: 50%;
+}
+
+.carousel-control-next-icon {
+  background-color: #1600a7;
+   border-radius: 50%;
+}
+
+.arrow {    
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50%;
+}
+.arrow.left  { left: 10px; }
+.arrow.right { right: 10px; } 
+
+.foto {
+  width: 100%;  
+  padding-top: 100%;
+  background-color: #dcdcdc;
+  border-radius: 0.5em;
+  position: relative;
+}   
 
 .mensagem form {
   display: flex;
