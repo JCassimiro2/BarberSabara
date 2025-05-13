@@ -394,6 +394,31 @@ section {
   margin-top: 10px;
 }
 
+.card {
+  transition: transform 0.3s ease; /* Suaviza a transição */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Cresce o serviço quando passar o mouse */
+}
+
+.card:active {
+  transform: scale(1.05); /* Mantém o tamanho maior quando clicado */
+}
+
+#nova-secao {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 40px;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+#nova-secao.mostrar {
+  display: block;
+  opacity: 1;
+}
 
 @media (max-width: 768px) {
   nav ul {
