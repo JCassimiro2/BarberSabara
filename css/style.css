@@ -416,8 +416,80 @@ section {
 }
 
 #nova-secao.mostrar {
-  display: block;
+   display: block !important;
   opacity: 1;
+}
+
+/* Sobe um pouco a seção Loja e reduz espaçamento superior */
+#secao-loja {
+  margin-top: -20px;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+/* Cards um pouco maiores */
+#secao-loja .card {
+  transform: scale(1.03);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#secao-loja .card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Garante que não haja animações na seção Loja nem no footer */
+#secao-loja,
+footer {
+  transition: none !important;
+}
+
+/* Ajuste de espaçamento para a seção Loja */
+#secao-loja {
+  margin-top: -20px; /* sobe a seção um pouco */
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Se quiser estilizar ainda mais os títulos */
+#secao-loja h2 {
+  color: #fff;
+  font-weight: bold;
+}
+
+.loja-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+}
+
+/* Logo um pouco mais à esquerda */
+.logo-loja {
+  height: 40px;
+  margin-left: 10px;
+}
+
+/* Título centralizado */
+.titulo-loja {
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Espaçamento da lateral do filtro */
+.filtros-loja {
+  padding-left: 30px;
+}
+
+/* Estilo para o botão de voltar */
+.voltar-btn {
+  position: fixed;
+  bottom: 20px; /* Ajuste a distância da parte inferior da tela */
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza o botão horizontalmente */
+  z-index: 999; /* Garante que o botão fique acima de outros elementos */
 }
 
 @media (max-width: 768px) {

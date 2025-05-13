@@ -3,19 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BarberSabará</title>
+  <title>BarbeariaSabará</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-  <div id="conteudo-principal"> <!-- INÍCIO DO BLOCO QUE SERÁ ESCONDIDO -->
-
+  <div id="conteudo-principal">
     <header class="reveal bg-dark text-white py-3">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">BarberSabará</a>
+            <a class="navbar-brand" href="#">BarbeariaSabará</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -36,15 +35,16 @@
       <div class="container">
         <div class="row g-4 justify-content-center">
           <div class="col-md-6 col-lg-5">
-            <div class="card h-100" id="servico1">
-              <div class="card-body">
-                <h2 class="card-title">Loja</h2>
-                <p class="card-text">Veja os produtos que vendemos em nossa barbearia</p>
-              </div>
-            </div>
-          </div>
+  <div class="card h-100" id="servico1"> <!-- Adicionando id="servico1" aqui -->
+    <div class="card-body">
+      <h2 class="card-title">Loja</h2>
+      <p class="card-text">Veja os produtos que vendemos em nossa barbearia</p>
+    </div>
+  </div>
+</div>
+
           <div class="col-md-6 col-lg-5">
-            <div class="card h-100" id="servico2">
+            <div class="card h-100">
               <div class="card-body">
                 <h2 class="card-title">Serviços</h2>
                 <p class="card-text">Veja os horários disponíveis!</p>
@@ -134,14 +134,7 @@
         </div>
       </div>
     </section>
-
-  </div> <!-- fim do conteúdo principal -->
-
-  <section id="nova-secao">
-    <h2>Nova Seção</h2>
-    <p>Você clicou em um serviço.</p>
-    <button class="btn btn-dark mt-3" onclick="voltar()">Voltar</button>
-  </section>
+  </div>
 
   <footer class="reveal bg-dark text-white py-4">
     <div class="container">
@@ -164,38 +157,6 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      document.querySelectorAll('.card').forEach(card => {
-        card.addEventListener('click', function () {
-          const conteudo = document.getElementById('conteudo-principal');
-          const novaSecao = document.getElementById('nova-secao');
-
-          conteudo.style.transition = "opacity 0.5s ease";
-          conteudo.style.opacity = "0";
-
-          setTimeout(() => {
-            conteudo.style.display = 'none';
-            novaSecao.classList.add('mostrar');
-          }, 500);
-        });
-      });
-    });
-
-    function voltar() {
-      const conteudo = document.getElementById('conteudo-principal');
-      const novaSecao = document.getElementById('nova-secao');
-
-      novaSecao.classList.remove('mostrar');
-      novaSecao.style.display = 'none';
-
-      conteudo.style.display = 'block';
-      setTimeout(() => {
-        conteudo.style.opacity = '1';
-      }, 50);
-    }
-  </script>
 
   <script>
     // animação de scroll
@@ -231,6 +192,27 @@
         }, 3000);
       }
     });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+  const conteudo = document.getElementById('conteudo-principal');
+  const secaoLoja = document.getElementById('secao-loja');
+  const secaoServicos = document.getElementById('secao-servicos');
+
+  document.getElementById('servico1').addEventListener('click', function () {
+    window.location.href = 'loja.html'; // redireciona para a loja.html
+  });
+
+  document.getElementById('servico2').addEventListener('click', function () {
+    conteudo.style.opacity = '0';
+    setTimeout(() => {
+      conteudo.style.display = 'none';
+      secaoServicos.style.display = 'block';
+    }, 500);
+  });
+});
+
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
