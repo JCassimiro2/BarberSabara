@@ -1,0 +1,180 @@
+/* Estilos gerais para o loja.html */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 0;
+  }
+  
+  .search-bar {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 30px; /* Espaço abaixo da pesquisa */
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 10px;
+    border-radius: 25px; /* Bordas arredondadas */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    padding: 10px;
+  }
+  
+  .search-bar i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+  }
+  
+  /* Layout da área de filtro e produtos lado a lado */
+  .container {
+    display: flex;
+    justify-content: flex-start; /* Deixa o filtro e os produtos alinhados no início */
+    gap: 30px; /* Espaço entre o filtro e os produtos */
+    margin-top: 30px;
+  }
+  
+  .filtros-loja {
+    border-right: 1px solid #ccc;
+  }
+  
+  .col-md-9 {
+    flex: 3; /* Dá mais espaço para os produtos */
+    display: flex;
+    justify-content: center; /* Centraliza os produtos */
+    flex-wrap: wrap;
+  }
+  
+  /* Estilos para os produtos */
+  .produto .card {
+    min-height: 100%;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Estilos para o botão voltar */
+  .voltar-btn {
+    position: fixed;
+    bottom: 20px; /* Ajuste a distância da parte inferior da tela */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza o botão horizontalmente */
+    z-index: 999; /* Garante que o botão fique acima de outros elementos */
+  }
+  
+  .titulo-loja {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white; /* ou qualquer cor que combine com seu layout */
+    margin: 0 auto;
+    padding: 1em 0;
+  }
+
+  .loja-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .logo-loja {
+    height: 40px; /* ou ajuste conforme necessário */
+  }
+  
+  .search-icon {
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Título centralizado no header */
+  .titulo-loja-centralizado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    pointer-events: none; /* evita cliques acidentais */
+  }
+
+  .search-form {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+  
+  .search-form input {
+    padding: 0.4em 0.6em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .search-form button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 0.4em 0.8em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .search-form button:hover {
+    background-color: #666;
+  }
+
+  .destaque {
+    animation: brilho 0.3s ease-in-out;
+  }
+  
+  #mensagem-nao-encontrado {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(27, 25, 25);
+    font-weight: bold;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+
+  .pesquisa-container input {
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+    width: 220px;
+  }
+  
+  
+  #campo-pesquisa {
+    padding: 10px 20px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+
+  @keyframes brilho {
+    from {
+      outline-color: transparent;
+    }
+    to {
+      outline-color: gold;
+    }
+  }
+  
