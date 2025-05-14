@@ -458,29 +458,37 @@ footer {
   font-weight: bold;
 }
 
-.loja-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1050;
+.search-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 20px;
+  width: 50px;
+  text-align: right;
 }
 
-/* Logo um pouco mais à esquerda */
+.loja-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo-loja {
-  height: 40px;
-  margin-left: 10px;
+  width: 50px;
 }
 
-/* Título centralizado */
+
 .titulo-loja {
-  text-align: center;
   flex-grow: 1;
+  text-align: center;
+  margin: 0;
+  transform: translateY(-3px); /* Leve ajuste vertical se necessário */
 }
 
 /* Espaçamento da lateral do filtro */
 .filtros-loja {
-  padding-left: 30px;
+  flex: 1;
+  max-width: 300px;
+  margin-left: 1px;
 }
 
 /* Estilo para o botão de voltar */
@@ -491,6 +499,69 @@ footer {
   transform: translateX(-50%); /* Centraliza o botão horizontalmente */
   z-index: 999; /* Garante que o botão fique acima de outros elementos */
 }
+/* Ajuste para garantir que o layout dos produtos e filtros fique ao lado *
+
+/* Barra de pesquisa */
+.search-bar {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 30px; /* Espaço abaixo da pesquisa */
+}
+
+.search-bar input {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 10px;
+  border-radius: 25px; /* Bordas arredondadas */
+  border: 1px solid #ccc; /* Borda cinza clara */
+  padding: 10px;
+}
+
+.search-bar i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+/* Layout da área de filtro e produtos lado a lado */
+.container {
+  display: flex;
+  justify-content: flex-start; /* Deixa o filtro e os produtos alinhados no início */
+  gap: 30px; /* Espaço entre o filtro e os produtos */
+  margin-top: 30px;
+}
+
+.filtros-loja {
+  flex: 1;
+  max-width: 300px; /* Limita o tamanho do filtro */
+}
+
+.col-md-9 {
+  flex: 3; /* Dá mais espaço para os produtos */
+  display: flex;
+  justify-content: center; /* Centraliza os produtos */
+  flex-wrap: wrap;
+}
+
+/* Estilos para os produtos */
+.produto {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 100%; /* Ajusta a largura da carta para ocupar 100% */
+}
+
+/* Estilos para o botão voltar */
+.voltar-btn {
+  margin-top: 30px;
+}
+
 
 @media (max-width: 768px) {
   nav ul {
