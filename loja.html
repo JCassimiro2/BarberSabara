@@ -3,91 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Loja - BarberSabará</title>
-
-  <!-- Bootstrap -->
+  <title>Loja - BarbeariaSabará</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <!-- CSS personalizado -->
   <link href="css/styleLoja.css" rel="stylesheet"/>
-  <!-- Ícones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body>
+<body>  
+<header class="loja-header">
+ <a href="index.html" class="voltar-btn">Voltar</a>
+  <img src="sua-logo.png" alt="Logo BarberSabará" class="logo-loja">  
+  <nav class="menu-nav">
+    <ul class="menu-principal">
+      <li class="menu-item">
+        PRODUTOS
+        <div class="mega-menu">
+          <div class="menu-coluna">
+            <h4>PARA BARBA</h4>
+            <ul>
+              <li><a href="#">Balm Hidratante de Barba</a></li>
+              <li><a href="#">Condicionador de Barba</a></li>
+              <li><a href="#">Shampoo de Barba</a></li>
+              <li><a href="#">Óleo de Barba</a></li>
+              <li><a href="#">Modelador de Barba</a></li>
+            </ul>
+          </div>
+          <div class="menu-coluna">
+            <h4>LINHA CARVÃO ATIVADO</h4>
+            <ul>
+              <li><a href="#">Shampoo com Carvão Ativado</a></li>
+              <li><a href="#">Máscara de Hidratação</a></li>
+            </ul>
+          </div>
+          <div class="menu-coluna">
+            <h4>PARA CABELO</h4>
+            <ul>
+              <li><a href="#">Pasta Modeladora</a></li>
+            </ul>
+          </div>
+          <div class="menu-coluna">
+            <h4>PARA BARBEAR</h4>
+            <ul>
+              <li><a href="#">Gel de Barbear Transparente</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="menu-item">ACESSÓRIOS</li>
+      <li class="menu-item">ECONOMIZE</li>
+    </ul>
+  </nav>
+</header>   
 
-  <header class="loja-header bg-dark text-white py-3 position-relative">
-    <div class="container d-flex align-items-center justify-content-between">
-      <img src="img/logo.png" alt="Logo BarberSabará" class="logo-loja">
+  <!-- Campo de pesquisa -->
+  <div class="container text-center my-4">
+    <input type="text" id="campo-pesquisa" class="form-control mx-auto w-50" placeholder="Pesquisar produtos..." oninput="pesquisarProduto()">
+    <p id="mensagem-nao-encontrado" class="text-danger mt-2" style="display: none;">Nenhum produto encontrado.</p>
+  </div>
 
-      <div class="pesquisa-container">
-        <input type="text" id="campo-pesquisa" placeholder="Pesquisar produtos..." oninput="pesquisarProduto()" />
-      </div>
-
-      <p id="mensagem-nao-encontrado">Nenhum produto encontrado.</p>
-
-      <h2 class="titulo-loja-centralizado mb-0">Loja</h2>
-    </div>
-  </header>    
-
+  <!-- Produtos -->
   <div class="container my-5">
-    <div class="row">
-      <!-- Filtros -->
-      <div class="col-md-3 filtros-loja">
-        <h5>Filtrar por categoria:</h5>
-        <div class="form-check">
-          <input class="form-check-input filtro-produto" type="checkbox" value="pomada" id="filtroPomada">
-          <label class="form-check-label" for="filtroPomada">Pomada</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input filtro-produto" type="checkbox" value="minoxidil" id="filtroMinoxidil">
-          <label class="form-check-label" for="filtroMinoxidil">Minoxidil</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input filtro-produto" type="checkbox" value="shampoo" id="filtroShampoo">
-          <label class="form-check-label" for="filtroShampoo">Shampoo</label>
+    <div class="row justify-content-center g-4" id="lista-produtos">
+      <div class="col-6 col-sm-4 col-md-3 produto pomada">
+        <div class="card h-100 text-center border-0 shadow-sm">
+          <img src="img/produto1.png" class="card-img-top" alt="Pomada Modeladora">
+          <div class="card-body">
+            <h5 class="card-title nome-produto">Pomada Modeladora</h5>
+            <p class="card-text descricao-produto">Alta fixação e brilho médio.</p>
+            <p class="h6 text-primary">R$ 29,90</p>
+          </div>
         </div>
       </div>
-
-      <!-- Produtos -->
-      <div class="col-md-9">
-        <div class="row g-4" id="lista-produtos">
-          <div class="col-md-4 produto pomada">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <h5 class="card-title nome-produto">Pomada Modeladora</h5>
-                <p class="card-text descricao-produto">Alta fixação e brilho médio.</p>
-                <p class="h6 text-primary">R$ 29,90</p>
-              </div>
-            </div>
+      <div class="col-6 col-sm-4 col-md-3 produto minoxidil">
+        <div class="card h-100 text-center border-0 shadow-sm">
+          <img src="img/produto2.png" class="card-img-top" alt="Minoxidil">
+          <div class="card-body">
+            <h5 class="card-title nome-produto">Minoxidil</h5>
+            <p class="card-text descricao-produto">Crescimento da barba.</p>
+            <p class="h6 text-success">R$ 79,90</p>
           </div>
-          <div class="col-md-4 produto minoxidil">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <h5 class="card-title nome-produto">Minoxidil</h5>
-                <p class="card-text descricao-produto">Tratamento para crescimento da barba.</p>
-                <p class="h6 text-success">R$ 79,90</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 produto shampoo">
-            <div class="card h-100">
-              <div class="card-body text-center">
-                <h5 class="card-title nome-produto">Shampoo Anticaspa</h5>
-                <p class="card-text descricao-produto">Combate a caspa com fórmula refrescante.</p>
-                <p class="h6 text-warning">R$ 29,90</p>
-              </div>
-            </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 produto shampoo">
+        <div class="card h-100 text-center border-0 shadow-sm">
+          <img src="img/produto3.png" class="card-img-top" alt="Shampoo Anticaspa">
+          <div class="card-body">
+            <h5 class="card-title nome-produto">Shampoo Anticaspa</h5>
+            <p class="card-text descricao-produto">Fórmula refrescante.</p>
+            <p class="h6 text-warning">R$ 29,90</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Botão Voltar -->
-  <div class="container text-center">
-    <button onclick="window.history.back()" class="btn btn-dark mb-4 voltar-btn">Voltar</button>
-  </div>
-
-  <!-- Scripts -->
   <script>
     function pesquisarProduto() {
       let input = document.getElementById('campo-pesquisa').value.toLowerCase();
@@ -109,26 +117,6 @@
 
       mensagemNaoEncontrado.style.display = produtosEncontrados ? 'none' : 'block';
     }
-
-    document.querySelectorAll('.filtro-produto').forEach(filtro => {
-      filtro.addEventListener('change', () => {
-        const filtrosAtivos = Array.from(document.querySelectorAll('.filtro-produto:checked')).map(el => el.value);
-        const produtos = document.querySelectorAll('#lista-produtos .produto');
-
-        produtos.forEach(prod => {
-          const classes = prod.classList;
-          const visivel = filtrosAtivos.some(filtro => classes.contains(filtro));
-          if (filtrosAtivos.length === 0 || visivel) {
-            prod.classList.remove('d-none');
-          } else {
-            prod.classList.add('d-none');
-          }
-        });
-
-        document.getElementById('campo-pesquisa').value = '';
-        document.getElementById('mensagem-nao-encontrado').style.display = 'none';
-      });
-    });
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

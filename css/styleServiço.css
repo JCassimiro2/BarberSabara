@@ -1,0 +1,103 @@
+body {
+  padding-top: 130px; /* ajuste se seu header for maior ou menor */
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+.servico-header {
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 1rem;
+  text-align: center;
+  z-index: 1050;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo-servico {
+  max-height: 60px;
+  margin-bottom: 1rem;
+}
+
+.titulo-servico {
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+/* Botão voltar */
+.voltar-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: 500;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.voltar-btn:hover {
+  background-color: #333;
+}
+
+/* Conteúdo principal */
+.conteudo-servico {
+  padding: 2rem;
+}
+
+/* Grade de serviços */
+.servicos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card-servico {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-servico:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .card-servico {
+    width: 90%;
+  }
+
+  .voltar-btn {
+    top: 15px;
+    left: 10px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .titulo-servico {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  .logo-servico {
+    max-height: 50px;
+  }
+
+  body {
+    padding-top: 130px;
+  }
+}

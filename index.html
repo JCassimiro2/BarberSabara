@@ -42,15 +42,21 @@
     </div>
   </div>
 </div>
-
           <div class="col-md-6 col-lg-5">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title">Serviços</h2>
-                <p class="card-text">Veja os horários disponíveis!</p>
-              </div>
-            </div>
-          </div>
+  <div class="card h-100" id="servico2">
+    <div class="card-body">
+      <h2 class="card-title">Serviços</h2>
+      <p class="card-text">Veja os preços dos cortes e horários disponíveis!</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+  </div>
+</div>
+
         </div>
       </div>
     </section>
@@ -203,18 +209,19 @@
   document.getElementById('servico1').addEventListener('click', function () {
     window.location.href = 'loja.html'; // redireciona para a loja.html
   });
+    }); 
+
+    document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('servico1').addEventListener('click', function () {
+    window.location.href = 'loja.html';
+  });
 
   document.getElementById('servico2').addEventListener('click', function () {
-    conteudo.style.opacity = '0';
-    setTimeout(() => {
-      conteudo.style.display = 'none';
-      secaoServicos.style.display = 'block';
-    }, 500);
+    window.location.href = 'Serviços.html';
   });
 });
 
-  </script>
-
+  </script> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

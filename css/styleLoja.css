@@ -1,180 +1,258 @@
-/* Estilos gerais para o loja.html */
+/* Reset básico */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #000;
+  padding-top: 150px; /* ou ajuste conforme necessário */
+}
+
+/* Header */
+.loja-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 2rem 1rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo-loja {
+  max-height: 60px;
+  margin-bottom: 1rem;
+}
+
+.titulo-loja {
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+/* Pesquisa */
+#campo-pesquisa {
+  max-width: 400px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+}
+
+#mensagem-nao-encontrado {
+  font-weight: 500;
+}
+
+/* Produtos */
+#lista-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.produto {
+  flex: 0 0 auto;
+  width: 200px;
+}
+
+.card {
+  border: none;
+  background-color: #ffffff;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.card-title {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+.voltar-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: 500;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.voltar-btn:hover {
+  background-color: #333;
+}
+
+.btn-outline-dark:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.menu-nav {
+  background-color: #ffffff;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e5e5;padding-top: 10px; 
+}
+
+.menu-principal {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+
+.menu-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.mega-menu {
+  display: none !important;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 2rem;
+  gap: 3rem;
+  z-index: 1000;
+  width: 70vw;      /* diminui a largura */
+  max-width: 900px; /* largura máxima menor */
+  border-top: 2px solid #000;
+}
+
+.menu-item:hover > .mega-menu {
+  display: flex !important;
+}
+
+.menu-coluna {
+  min-width: 180px;
+}
+
+.menu-coluna h4 {
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  color: #555;
+  text-transform: uppercase;
+}
+
+.menu-coluna ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-coluna ul li {
+  margin-bottom: 0.5rem;
+}
+
+.menu-coluna ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.menu-coluna ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries para Responsividade */
+
+/* Tablets e telas médias */
+@media (max-width: 900px) {
+  #lista-produtos {
+    gap: 1.5rem;
   }
-  
-  .search-bar {
-    position: relative;
-    width: 100%;
-    max-width: 350px;
-    margin-bottom: 30px; /* Espaço abaixo da pesquisa */
+
+  .produto {
+    width: 45%; /* 2 produtos por linha */
   }
-  
-  .search-bar input {
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 10px;
-    border-radius: 25px; /* Bordas arredondadas */
-    border: 1px solid #ccc; /* Borda cinza clara */
-    padding: 10px;
+
+  .mega-menu {
+    width: 90vw;
+    padding: 1.5rem;
+    gap: 2rem;
   }
-  
-  .search-bar i {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #aaa;
+
+  .menu-coluna {
+    min-width: 140px;
   }
-  
-  /* Layout da área de filtro e produtos lado a lado */
-  .container {
-    display: flex;
-    justify-content: flex-start; /* Deixa o filtro e os produtos alinhados no início */
-    gap: 30px; /* Espaço entre o filtro e os produtos */
-    margin-top: 30px;
+
+  .menu-principal {
+    gap: 1.5rem;
+    font-size: 0.9rem;
   }
-  
-  .filtros-loja {
-    border-right: 1px solid #ccc;
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  #lista-produtos {
+    gap: 1rem;
   }
-  
-  .col-md-9 {
-    flex: 3; /* Dá mais espaço para os produtos */
-    display: flex;
-    justify-content: center; /* Centraliza os produtos */
-    flex-wrap: wrap;
+
+  .produto {
+    width: 100%; /* 1 produto por linha */
   }
-  
-  /* Estilos para os produtos */
-  .produto .card {
-    min-height: 100%;
-    overflow-wrap: break-word;
-    display: flex;
+
+  .card-img-top {
+    height: 180px;
+  }
+
+  .menu-principal {
     flex-direction: column;
-    justify-content: center;
+    gap: 0;
+    font-size: 0.85rem;
   }
-  
-  /* Estilos para o botão voltar */
-  .voltar-btn {
-    position: fixed;
-    bottom: 20px; /* Ajuste a distância da parte inferior da tela */
-    left: 50%;
-    transform: translateX(-50%); /* Centraliza o botão horizontalmente */
-    z-index: 999; /* Garante que o botão fique acima de outros elementos */
-  }
-  
-  .titulo-loja {
+
+  .menu-item {
     text-align: center;
-    font-size: 2.5em;
-    font-weight: bold;
-    color: white; /* ou qualquer cor que combine com seu layout */
-    margin: 0 auto;
-    padding: 1em 0;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
   }
 
-  .loja-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
+  .mega-menu {
+    position: static;
+    transform: none;
+    width: 100%;
+    box-shadow: none;
+    border-top: none;
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 
-  .logo-loja {
-    height: 40px; /* ou ajuste conforme necessário */
-  }
-  
-  .search-icon {
-    font-size: 1.5em;
-    color: white;
-    cursor: pointer;
-  }
-  
-  /* Título centralizado no header */
-  .titulo-loja-centralizado {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    font-size: 1.8em;
-    font-weight: bold;
-    color: white;
-    pointer-events: none; /* evita cliques acidentais */
+  .menu-item:hover > .mega-menu,
+  .menu-item:focus-within > .mega-menu {
+    display: flex !important;
   }
 
-  .search-form {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
+  .menu-coluna {
+    min-width: 100%;
+    margin-bottom: 1rem;
   }
-  
-  .search-form input {
-    padding: 0.4em 0.6em;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    outline: none;
-  }
-  
-  .search-form button {
-    background-color: #444;
-    color: white;
-    border: none;
-    padding: 0.4em 0.8em;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .search-form button:hover {
-    background-color: #666;
-  }
-
-  .destaque {
-    animation: brilho 0.3s ease-in-out;
-  }
-  
-  #mensagem-nao-encontrado {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(27, 25, 25);
-    font-weight: bold;
-    background-color: #fff;
-    padding: 20px 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-  }
-
-  .pesquisa-container input {
-    padding: 5px 10px;
-    border-radius: 8px;
-    border: none;
-    width: 220px;
-  }
-  
-  
-  #campo-pesquisa {
-    padding: 10px 20px;
-    width: 80%;
-    max-width: 400px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-  }
-  
-
-  @keyframes brilho {
-    from {
-      outline-color: transparent;
-    }
-    to {
-      outline-color: gold;
-    }
-  }
-  
+}
+    
