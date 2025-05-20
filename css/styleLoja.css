@@ -4,7 +4,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f5f5f5;
   color: #000;
-  padding-top: 150px; /* ou ajuste conforme necessário */
+  padding-top: 150px; /* ajuste conforme necessário */
 }
 
 /* Header */
@@ -84,6 +84,7 @@ body {
   font-size: 0.9rem;
   color: #555;
 }
+
 .voltar-btn {
   position: absolute;
   top: 20px;
@@ -106,10 +107,12 @@ body {
   color: #fff;
 }
 
+/* Menu desktop */
 .menu-nav {
   background-color: #ffffff;
   padding: 1rem 0;
-  border-bottom: 1px solid #e5e5e5;padding-top: 10px; 
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 10px;
 }
 
 .menu-principal {
@@ -136,12 +139,12 @@ body {
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 2rem;
   gap: 3rem;
   z-index: 1000;
-  width: 70vw;      /* diminui a largura */
-  max-width: 900px; /* largura máxima menor */
+  width: 70vw;
+  max-width: 900px;
   border-top: 2px solid #000;
 }
 
@@ -180,6 +183,102 @@ body {
   text-decoration: underline;
 }
 
+/* Botão hambúrguer */
+.btn-menu-hamburguer {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #000;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  z-index: 1001;
+}
+
+.painel-lateral {
+  position: fixed;
+  top: 0;
+  right: -280px; /* escondido do lado direito */
+  width: 280px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 12px rgba(0, 0, 0, 0.3); /* sombra invertida para direita */
+  padding: 2rem 1rem;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.painel-lateral.aberto {
+  right: 0;
+}
+
+.btn-fechar {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+.menu-lateral {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-lateral {
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  user-select: none;
+}
+
+.item-lateral a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  padding: 0.5rem 0;
+}
+
+/* submenu lateral escondido */
+.submenu-lateral {
+  list-style: none;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+/* submenu lateral aberto */
+.submenu-lateral.aberto {
+  display: block;
+}
+
+.submenu-lateral ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0.3rem 0;
+}
+
+.submenu-lateral ul li {
+  padding: 0.25rem 0;
+  font-weight: normal;
+  font-size: 0.95rem;
+}
+
+.submenu-lateral ul li a {
+  color: #555;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
 /* Media Queries para Responsividade */
 
 /* Tablets e telas médias */
@@ -189,7 +288,7 @@ body {
   }
 
   .produto {
-    width: 45%; /* 2 produtos por linha */
+    width: 45%;
   }
 
   .mega-menu {
@@ -210,49 +309,25 @@ body {
 
 /* Celulares */
 @media (max-width: 600px) {
+  /* esconder menu desktop */
+  .menu-nav {
+    display: none;
+  }
+
+  /* mostrar hambúrguer */
+  .btn-menu-hamburguer {
+    display: block;
+  }
+
   #lista-produtos {
     gap: 1rem;
   }
 
   .produto {
-    width: 100%; /* 1 produto por linha */
+    width: 100%;
   }
 
   .card-img-top {
     height: 180px;
   }
-
-  .menu-principal {
-    flex-direction: column;
-    gap: 0;
-    font-size: 0.85rem;
-  }
-
-  .menu-item {
-    text-align: center;
-    padding: 0.75rem 0;
-    border-bottom: 1px solid #eee;
-  }
-
-  .mega-menu {
-    position: static;
-    transform: none;
-    width: 100%;
-    box-shadow: none;
-    border-top: none;
-    padding: 1rem;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .menu-item:hover > .mega-menu,
-  .menu-item:focus-within > .mega-menu {
-    display: flex !important;
-  }
-
-  .menu-coluna {
-    min-width: 100%;
-    margin-bottom: 1rem;
-  }
 }
-    
