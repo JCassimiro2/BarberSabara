@@ -129,19 +129,17 @@
       </div>
     </section>
 
-    <section class="mensagem reveal py-5" id="feedback">
-      <div class="container text-center">
-        <h2>Deixe um Feedback <br> sobre nosso site</h2>
-        <form class="mx-auto" style="max-width: 500px;" id="feedback-form">
-          <input type="text" class="form-control mb-3" placeholder="Nome" id="name" />
-          <textarea class="form-control mb-3" placeholder="Feedback" id="feedback-text"></textarea>
-          <button type="submit" class="btn btn-dark">Enviar</button>
-        </form>
-        <div id="feedback-message" class="mt-3" style="display:none; color:red;">
-          Enviado com sucesso!
-        </div>
-      </div>
-    </section>
+    <section class="mensagem" id="feedback">
+  <h2>Deixe seu Feedback</h2>
+  <form>
+    <input type="text" name="nome" placeholder="Nome" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="feedback" placeholder="Digite seu feedback" rows="5" required></textarea>
+    <button type="submit">Enviar</button>
+    <div id="feedback-message">Obrigado pelo seu feedback!</div>
+  </form>
+</section>
+
   </div>
 
   <footer class="reveal bg-dark text-white py-4">
