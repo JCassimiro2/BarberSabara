@@ -50,10 +50,8 @@ body {
 
 .conteudo-servico {
   display: flex;
-  justify-content: center;  /* centraliza horizontal */
-  align-items: center;      /* centraliza vertical */
-  height: calc(100vh - 130px); /* altura da tela menos o header fixo */
-  padding: 2rem;
+  justify-content: center;
+  padding: 4rem 2rem 2rem 2rem; /* mais espaço no topo */
 }
 
 .servicos-grid {
@@ -79,6 +77,56 @@ body {
 .card-servico:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.agenda-barbeiro {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.tabela-agenda {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.tabela-agenda th,
+.tabela-agenda td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabela-agenda th {
+  background-color: #f0f0f0;
+  font-weight: 600;
+}
+
+.tabela-agenda td {
+  font-size: 1rem;
+}
+
+.whatsapp-contato {
+  margin-top: 1rem;
+}
+
+.btn-zap {
+  display: inline-block;
+  background-color: #25D366;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-zap:hover {
+  background-color: #1ebe5d;
 }
 
 /* Responsivo */
