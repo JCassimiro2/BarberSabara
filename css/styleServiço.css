@@ -71,6 +71,9 @@ body {
   width: 280px;
   box-shadow: 0 2px 8px rgba(196, 196, 196, 0.351);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .card-servico:hover {
