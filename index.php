@@ -37,28 +37,21 @@
       <div class="container">
         <div class="row g-4 justify-content-center">
           <div class="col-md-6 col-lg-5">
-  <div class="card h-100" id="servico1"> <!-- Adicionando id="servico1" aqui -->
-    <div class="card-body">
-      <h2 class="card-title">Loja</h2>
-      <p class="card-text">Veja os produtos que vendemos em nossa barbearia</p>
-    </div>
-  </div>
-</div>
+            <div class="card h-100" id="servico1">
+              <div class="card-body">
+                <h2 class="card-title">Loja</h2>
+                <p class="card-text">Veja os produtos que vendemos em nossa barbearia</p>
+              </div>
+            </div>
+          </div>
           <div class="col-md-6 col-lg-5">
-  <div class="card h-100" id="servico2">
-    <div class="card-body">
-      <h2 class="card-title">Serviços</h2>
-      <p class="card-text">Veja os preços dos cortes e horários disponíveis!</p>
-    </div>
-  </div>
-</div>
-
-  </div>
-</div>
-
-  </div>
-</div>
-
+            <div class="card h-100" id="servico2">
+              <div class="card-body">
+                <h2 class="card-title">Serviços</h2>
+                <p class="card-text">Veja os preços dos cortes e horários disponíveis!</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -129,40 +122,24 @@
       </div>
     </section>
 
+    <!-- Formulário único, funcionando e com mensagem de sucesso -->
     <section class="mensagem" id="feedback">
-  <h2>Deixe seu Feedback</h2>
-  <form>
-    <input type="text" name="nome" placeholder="Nome" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <textarea name="feedback" placeholder="Digite seu feedback" rows="5" required></textarea>
-    <button type="submit">Enviar</button>
-    <div id="feedback-message">Obrigado pelo seu feedback!</div>
-  </form>
-</section>
+      <h2>Deixe seu Feedback</h2>
+      <form action="processa_feedback.php" method="POST">
+        <input type="text" name="nome" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="feedback" placeholder="Digite seu feedback" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <?php if (isset($_GET['sucesso'])): ?>
+        <div style="color: green; margin-top: 10px;">Feedback enviado com sucesso!</div>
+      <?php endif; ?>
+    </section>
 
   </div>
 
-  <footer class="reveal bg-dark text-white py-4">
-    <div class="container">
-      <div class="row text-center text-md-start align-items-center">
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="footer-item">
-            <span>📷</span>
-            <a href="https://www.instagram.com/msabara_/" target="_blank">https://www.instagram.com/msabara_/</a>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3 mb-md-0">
-          <p class="footer-mensagem mb-0">Venha conhecer<br>nosso estabelecimento!</p>
-        </div>
-        <div class="col-md-4">
-          <div class="footer-item">
-            <span>📍</span>
-            <a href="https://www.google.com/maps?q=Av+Curitiba,+725+(sala01)" target="_blank">Av Curitiba , 725 (sala01)</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <?php include 'footer.php'; ?>
 
   <script>
     // animação de scroll
@@ -184,62 +161,44 @@
   </script>
 
   <script>
-    // feedback
-    document.getElementById('feedback-form').addEventListener('submit', function (event) {
-      event.preventDefault();
-      const name = document.getElementById('name').value;
-      const feedbackText = document.getElementById('feedback-text').value;
-      if (name && feedbackText) {
-        document.getElementById('feedback-message').style.display = 'block';
-        document.getElementById('name').value = '';
-        document.getElementById('feedback-text').value = '';
-        setTimeout(() => {
-          document.getElementById('feedback-message').style.display = 'none';
-        }, 3000);
-      }
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('servico1').addEventListener('click', function () {
+        window.location.href = 'loja.html';
+      });
+
+      document.getElementById('servico2').addEventListener('click', function () {
+        window.location.href = 'Serviços.html';
+      });
     });
   </script>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-  const conteudo = document.getElementById('conteudo-principal');
-  const secaoLoja = document.getElementById('secao-loja');
-  const secaoServicos = document.getElementById('secao-servicos');
+    document.querySelectorAll('a[href="loja.html"], a[href="servicos.html"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const destino = this.getAttribute('href');
 
-  document.getElementById('servico1').addEventListener('click', function () {
-    window.location.href = 'loja.html'; // redireciona para a loja.html
-  });
-    }); 
+        // Cria e insere o overlay da animação
+        const transicao = document.createElement('div');
+        transicao.classList.add('pagina-transicao');
+        document.body.appendChild(transicao);
 
-    document.addEventListener('DOMContentLoaded', function () {
-  document.getElementById('servico1').addEventListener('click', function () {
-    window.location.href = 'loja.html';
-  });
-
-  document.getElementById('servico2').addEventListener('click', function () {
-    window.location.href = 'Serviços.html';
-  });
-});
-
-  </script> 
-<script>
-  document.querySelectorAll('a[href="loja.html"], a[href="servicos.html"]').forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const destino = this.getAttribute('href');
-
-      // Cria e insere o overlay da animação
-      const transicao = document.createElement('div');
-      transicao.classList.add('pagina-transicao');
-      document.body.appendChild(transicao);
-
-      // Aguarda a animação e redireciona
-      setTimeout(() => {
-        window.location.href = destino;
-      }, 800); // tempo deve bater com o tempo da animação
+        // Aguarda a animação e redireciona
+        setTimeout(() => {
+          window.location.href = destino;
+        }, 800);
+      });
     });
-  });
+  </script>
+
+  <script>
+  // Se tiver sucesso na URL, rola até o feedback
+  if (window.location.search.includes("sucesso")) {
+    document.getElementById("feedback").scrollIntoView({ behavior: "smooth" });
+  }
 </script>
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
