@@ -14,6 +14,12 @@ body {
   flex-direction: column;
 }
 
+.logo-img {
+  height: 40px;         /* ou o tamanho que preferir */
+  width: auto;          /* mantém a proporção da imagem */
+  display: block;       /* evita espaços indesejados */
+}
+
 header {
   position: fixed;
   top: 0;

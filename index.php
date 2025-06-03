@@ -16,7 +16,9 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">BarbeariaSabará</a>
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Barbearia Sabará" class="logo-img">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -125,18 +127,18 @@
     <!-- Formulário único, funcionando e com mensagem de sucesso -->
     <section class="mensagem" id="feedback">
       <h2>Deixe seu Feedback</h2>
-      <form action="processa_feedback.php" method="POST">
-        <input type="text" name="nome" placeholder="Nome" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="feedback" placeholder="Digite seu feedback" rows="5" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
+      <form id="form-feedback">
+  <input type="text" name="nome" placeholder="Nome" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <textarea name="feedback" placeholder="Digite seu feedback" rows="5" required></textarea>
+  <button type="submit">Enviar</button>
+</form>
 
-      <?php if (isset($_GET['sucesso'])): ?>
-        <div style="color: green; margin-top: 10px;">Feedback enviado com sucesso!</div>
-      <?php endif; ?>
+<div id="mensagem-sucesso" style="color: green; margin-top: 10px; display: none;">
+  Feedback enviado com sucesso!
+</div>
+
     </section>
-
   </div>
 
   <?php include 'footer.php'; ?>
@@ -191,13 +193,20 @@
     });
   </script>
 
-  <script>
-  // Se tiver sucesso na URL, rola até o feedback
-  if (window.location.search.includes("sucesso")) {
-    document.getElementById("feedback").scrollIntoView({ behavior: "smooth" });
-  }
-</script>
+ <script>
+  document.getElementById('form-feedback').addEventListener('submit', function (e) {
+    e.preventDefault();
 
+    // Simula envio do formulário
+    document.getElementById('mensagem-sucesso').style.display = 'block';
+
+    // Limpa os campos
+    this.reset();
+
+    // Rola até a mensagem
+    document.getElementById("mensagem-sucesso").scrollIntoView({ behavior: "smooth" });
+  });
+</script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
