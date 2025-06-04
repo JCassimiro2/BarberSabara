@@ -17,8 +17,8 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="Barbearia Sabará" class="logo-img">
-            </a>
+  <img src="imagens/LogoBarbearia.png" alt="Barbearia Sabará" class="logo-img">
+</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
               <span class="navbar-toggler-icon"></span>
             </button>
