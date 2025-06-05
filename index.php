@@ -82,15 +82,6 @@
           <div class="col-md-6">
             <div class="info-estab text-center text-md-start">
               <p></p>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-end">
-          <div class="col-md-5">
-            <div class="foto-estab-direita mx-auto"></div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section class="galeria" id="Galeria">
