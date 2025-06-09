@@ -10,7 +10,7 @@
 </head>
 <body>  
 <header class="loja-header">
-  <a href="index.html" class="voltar-btn">Voltar</a>
+  <a href="index.php" class="voltar-btn">Voltar</a>
   <img src="sua-logo.png" alt="Logo BarberSabará" class="logo-loja">
 
   <!-- Botão Hambúrguer para mobile -->

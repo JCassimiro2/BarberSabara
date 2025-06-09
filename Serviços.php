@@ -15,7 +15,7 @@
 
   <main class="conteudo-servico">
   <section class="servicos-grid">
-  <a href="cabelo.html" class="card-servico">
+  <a href="cabelo.php" class="card-servico">
     <h3>Cabelo</h3>
     <p>Veja os preços e serviços que oferecemos para o seu cabelo.</p>
   </a>
