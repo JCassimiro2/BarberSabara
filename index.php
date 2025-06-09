@@ -12,7 +12,7 @@
   <div id="transicao" style="display: none;"></div>
 
   <div id="conteudo-principal">
-    <header class="reveal bg-dark text-white py-3">
+    <header class="reveal bg-dark text-white py-2">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="container-fluid">

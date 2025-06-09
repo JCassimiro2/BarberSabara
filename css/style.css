@@ -15,9 +15,14 @@ body {
 }
 
 .logo-img {
-  height: 60px;         /* ou o tamanho que preferir */
-  width: auto;          /* mantém a proporção da imagem */
-  display: block;       /* evita espaços indesejados */
+  width: 150px; /* aumenta a largura conforme quiser */
+  height: auto; /* mantém a proporção */
+  cursor: pointer; /* pra parecer clicável */
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.1); /* efeito zoom ao passar mouse */
 }
 
 header {
