@@ -178,17 +178,17 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('servico1').addEventListener('click', function () {
-        window.location.href = 'loja.html';
+        window.location.href = 'loja.php';
       });
 
       document.getElementById('servico2').addEventListener('click', function () {
-        window.location.href = 'Serviços.html';
+        window.location.href = 'Serviços.php';
       });
     });
   </script>
 
   <script>
-    document.querySelectorAll('a[href="loja.html"], a[href="servicos.html"]').forEach(link => {
+    document.querySelectorAll('a[href="loja.php"], a[href="servicos.php"]').forEach(link => {
       link.addEventListener('click', function(e) {
         e.preventDefault();
         const destino = this.getAttribute('href');
