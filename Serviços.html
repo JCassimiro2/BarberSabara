@@ -8,7 +8,7 @@
 </head>
 <body>
   <header class="servico-header">
-    <a href="index.html" class="voltar-btn">Voltar</a>
+    <a href="index.php" class="voltar-btn">Voltar</a>
     <img src="logo.png" alt="Logo BarberSabará" class="logo-servico" />
     <h1 class="titulo-servico">Nossos Serviços</h1>
   </header>
