@@ -27,18 +27,11 @@
           <div class="menu-coluna">
             <h4>PARA BARBA</h4>
             <ul>
-              <li><a href="#">Balm Hidratante de Barba</a></li>
+              <li><a href="#">Minoxidil</a></li>
               <li><a href="#">Condicionador de Barba</a></li>
               <li><a href="#">Shampoo de Barba</a></li>
               <li><a href="#">Óleo de Barba</a></li>
               <li><a href="#">Modelador de Barba</a></li>
-            </ul>
-          </div>
-          <div class="menu-coluna">
-            <h4>LINHA CARVÃO ATIVADO</h4>
-            <ul>
-              <li><a href="#">Shampoo com Carvão Ativado</a></li>
-              <li><a href="#">Máscara de Hidratação</a></li>
             </ul>
           </div>
           <div class="menu-coluna">
@@ -68,7 +61,7 @@
     <li class="item-lateral" id="produtos-lateral">
       PRODUTOS
       <ul class="submenu-lateral" id="submenu-produtos">
-        <li><a href="#">Balm Hidratante de Barba</a></li>
+        <li><a href="#">Minoxidil</a></li>
         <li><a href="#">Condicionador de Barba</a></li>
         <li><a href="#">Shampoo de Barba</a></li>
         <li><a href="#">Óleo de Barba</a></li>
@@ -79,7 +72,12 @@
         <li><a href="#">Gel de Barbear Transparente</a></li>
       </ul>
     </li>
-    <li class="item-lateral">ACESSÓRIOS</li>
+    <li class="item-lateral">
+      ACESSÓRIOS
+       <ul class="submenu-lateral" id="submenu-produtos">
+        <li><a href="#">Pentes de Madeira</a></li>
+      </ul>
+    </li>
     <li class="item-lateral">ECONOMIZE</li>
   </ul>
 </aside>

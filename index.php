@@ -118,19 +118,21 @@
     <!-- Formulário único, funcionando e com mensagem de sucesso -->
     <section class="mensagem" id="feedback">
       <h2>Deixe seu Feedback</h2>
-      <form action="processa_feedback.php" method="POST">
+      <form action="processa_feedback.php#feedback" method="POST">
         <input type="text" name="nome" placeholder="Nome" required>
         <input type="email" name="email" placeholder="Email" required>
         <textarea name="feedback" placeholder="Digite seu feedback" rows="5" required></textarea>
          <button type="submit">Enviar</button>
       </form>
 
-      <?php
-      // Exibir mensagem de sucesso (se houver via GET)
-        if (isset($_GET['sucesso']) && $_GET['sucesso'] === 'true') {
-          echo '<div style="color: green; margin-top: 10px;">Feedback enviado com sucesso!</div>';
-        }
-        ?>
+      <<?php
+  if (isset($_GET['sucesso']) && $_GET['sucesso'] === 'true') {
+    echo '
+      <div class="mensagem-enviada">
+        ✅ Enviado com sucesso!
+      </div>';
+  }
+?>
     </section>
   </div>
 
@@ -174,6 +176,22 @@
     window.addEventListener('scroll', reveal);
     reveal();
   </script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const logo = document.querySelector('.logo-img');
+    logo.addEventListener('click', function (e) {
+      e.preventDefault(); // evita comportamento padrão do link
+      
+      // Atualiza a imagem com timestamp pra evitar cache
+      const srcOriginal = this.getAttribute('src').split('?')[0];
+      this.setAttribute('src', srcOriginal + '?t=' + new Date().getTime());
+
+      // Scroll para o topo suave
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+</script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
