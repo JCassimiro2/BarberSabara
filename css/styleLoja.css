@@ -19,12 +19,6 @@ body {
   z-index: 999;
 }
 
-.logo-loja {
-  width: 240px;
-  height: auto;
-  object-fit: contain;
-}
-
 .titulo-loja {
   font-size: 1.5rem;
   letter-spacing: 4px;

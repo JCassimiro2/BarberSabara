@@ -9,7 +9,6 @@
 <body>
   <header class="servico-header">
     <a href="index.php" class="voltar-btn">Voltar</a>
-    <img src="imagens/LogodaBarbeariaSabará.png" alt="Logo BarberSabará" class="logo-servico" />
     <h1 class="titulo-servico">Nossos Serviços</h1>
   </header>
 
