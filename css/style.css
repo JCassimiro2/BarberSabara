@@ -16,7 +16,7 @@ body {
 
 .logo-img {
   width: 100px; /* aumenta a largura conforme quiser */
-  height: auto; /* mantém a proporção */
+  height: 50px; /* mantém a proporção */
   cursor: pointer; /* pra parecer clicável */
   transition: transform 0.3s ease;
 }
