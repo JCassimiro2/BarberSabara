@@ -112,7 +112,7 @@
       <div class="card h-100 text-center border-0 shadow-sm">
         <img src="img/produto2.png" class="card-img-top" alt="Minoxidil">
         <div class="card-body">
-          <h5 class="card-title nome-produto">Minoxidil</h5>
+          <h5 class="card-title nome-produto">Minoxidil 60ml</h5>
           <p class="card-text descricao-produto">Crescimento da barba.</p>
           <p class="h6 text-success">R$ 79,90</p>
         </div>

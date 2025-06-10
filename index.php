@@ -89,19 +89,19 @@
       <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="corte1.jpg" class="d-block w-100" alt="Americano">
+            <img src="imagens/americano.jpg" class="d-block w-100" alt="Americano">
           </div>
           <div class="carousel-item">
-            <img src="corte2.jpg" class="d-block w-100" alt="Low-Fade">
+            <img src="imagens/lowfade.jpg" class="d-block w-100" alt="Low-Fade">
           </div>
           <div class="carousel-item">
-            <img src="corte3.jpg" class="d-block w-100" alt="Mid-Fade">
+            <img src="imagens/midfade.jpg" class="d-block w-100" alt="Mid-Fade">
           </div>
           <div class="carousel-item">
-            <img src="corte2.jpg" class="d-block w-100" alt="Buzz Cut">
+            <img src="imagens/buzzcut.jpg" class="d-block w-100" alt="Buzz Cut">
           </div>
           <div class="carousel-item">
-            <img src="corte3.jpg" class="d-block w-100" alt="High-Fade">
+            <img src="imagens/highfade.jpg" class="d-block w-100" alt="High-Fade">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
