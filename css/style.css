@@ -117,7 +117,8 @@ nav ul li {
 .galeria {
   text-align: center;
   background-color: #f8f9fa;
-  padding: 40px 20px;
+  padding: 4rem 1rem;
+  text-align: center;
 }
 
 .carousel-wrapper {
@@ -125,6 +126,20 @@ nav ul li {
   overflow: hidden;
   max-width: 1000px;
   margin: auto;
+}
+
+.carousel-inner {
+  max-width: 800px; /* largura máxima do carrossel */
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner img {
+  max-height: 500px; /* altura máxima da imagem */
+  object-fit: cover;
+  width: 100%;
 }
 
 .carousel {
