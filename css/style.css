@@ -15,9 +15,8 @@ body {
 }
 
 .logo-img {
-  width: 100px; /* aumenta a largura conforme quiser */
+  width: 50px; /* aumenta a largura conforme quiser */
   height: 50px; /* mantém a proporção */
-  cursor: pointer; /* pra parecer clicável */
   transition: transform 0.3s ease;
 }
 
