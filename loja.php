@@ -48,7 +48,16 @@
           </div>
         </div>
       </li>
-      <li class="menu-item">ACESSÓRIOS</li>
+      <li class="menu-item">
+        ACESSÓRIOS
+        <div class="mega-menu">
+          <div class="menu-coluna">
+            <h4>PENTES</h4>
+            <ul>
+              <li><a href="#">Pentes de Madeira</a></li>
+            </ul>
+          </div>
+      </li>
       <li class="menu-item">ECONOMIZE</li>
     </ul>
   </nav>

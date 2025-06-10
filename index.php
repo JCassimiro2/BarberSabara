@@ -125,10 +125,10 @@
          <button type="submit">Enviar</button>
       </form>
 
-      <<?php
+      <?php
   if (isset($_GET['sucesso']) && $_GET['sucesso'] === 'true') {
     echo '
-      <div class="mensagem-enviada">
+      <div id="mensagem-enviada" class="mensagem-enviada">
         ✅ Enviado com sucesso!
       </div>';
   }
@@ -192,6 +192,18 @@
     });
   });
 </script>
+
+  <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const msg = document.getElementById('mensagem-enviada');
+    if (msg) {
+      setTimeout(() => {
+        msg.style.display = 'none';
+      }, 5000);
+    }
+  });
+</script>
+
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
