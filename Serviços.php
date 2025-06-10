@@ -18,7 +18,7 @@
     <h3>Cabelo</h3>
     <p>Veja os preços e serviços que oferecemos para o seu cabelo.</p>
   </a>
-  <a href="barba.html" class="card-servico">
+  <a href="rosto.php" class="card-servico">
     <h3>Rosto</h3>
     <p>Veja os preços e serviços que oferecemos para o seu rosto</p>
   </a>
