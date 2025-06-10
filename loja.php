@@ -11,7 +11,7 @@
 <body>  
 <header class="loja-header">
   <a href="index.php" class="voltar-btn">Voltar</a>
-  <img src="sua-logo.png" alt="Logo BarberSabará" class="logo-loja">
+  <img src="imagens/LogodaBarbeariaSabará.png" alt="Logo BarberSabará" class="logo-loja">
 
   <!-- Botão Hambúrguer para mobile -->
   <button class="btn-menu-hamburguer" id="btn-menu">
