@@ -29,13 +29,13 @@
               <li><a href="#">Condicionador de Barba</a></li>
               <li><a href="#">Shampoo de Barba</a></li>
               <li><a href="#">Óleo de Barba</a></li>
-              <li><a href="#">Modelador de Barba</a></li>
             </ul>
           </div>
           <div class="menu-coluna">
             <h4>PARA CABELO</h4>
             <ul>
               <li><a href="#">Pasta Modeladora</a></li>
+              <li><a href="#">Shampoo Anticaspa</a></li>
             </ul>
           </div>
           <div class="menu-coluna">
@@ -72,7 +72,6 @@
         <li><a href="#">Condicionador de Barba</a></li>
         <li><a href="#">Shampoo de Barba</a></li>
         <li><a href="#">Óleo de Barba</a></li>
-        <li><a href="#">Modelador de Barba</a></li>
         <li><a href="#">Shampoo com Carvão Ativado</a></li>
         <li><a href="#">Máscara de Hidratação</a></li>
         <li><a href="#">Pasta Modeladora</a></li>
@@ -100,7 +99,7 @@
   <div class="row justify-content-center g-4" id="lista-produtos">
     <div class="col-6 col-sm-4 col-md-3 produto pomada">
       <div class="card h-100 text-center border-0 shadow-sm">
-        <img src="img/produto1.png" class="card-img-top" alt="Pomada Modeladora">
+        <img src="imagens/pomada.jpg" class="card-img-top" alt="Pomada Modeladora">
         <div class="card-body">
           <h5 class="card-title nome-produto">Pomada Modeladora</h5>
           <p class="card-text descricao-produto">Alta fixação e brilho médio.</p>
@@ -110,7 +109,7 @@
     </div>
     <div class="col-6 col-sm-4 col-md-3 produto minoxidil">
       <div class="card h-100 text-center border-0 shadow-sm">
-        <img src="img/produto2.png" class="card-img-top" alt="Minoxidil">
+        <img src="imagens/Minoxidil.jpg" class="card-img-top" alt="Minoxidil">
         <div class="card-body">
           <h5 class="card-title nome-produto">Minoxidil 60ml</h5>
           <p class="card-text descricao-produto">Crescimento da barba.</p>
@@ -120,11 +119,61 @@
     </div>
     <div class="col-6 col-sm-4 col-md-3 produto shampoo">
       <div class="card h-100 text-center border-0 shadow-sm">
-        <img src="img/produto3.png" class="card-img-top" alt="Shampoo Anticaspa">
+        <img src="imagens/shampoo.jpg" class="card-img-top" alt="Shampoo Anticaspa">
         <div class="card-body">
-          <h5 class="card-title nome-produto">Shampoo Anticaspa</h5>
+          <h5 class="card-title nome-produto">Shampoo Anticaspa Fox</h5>
           <p class="card-text descricao-produto">Fórmula refrescante.</p>
           <p class="h6 text-warning">R$ 29,90</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 produto shampoo">
+      <div class="card h-100 text-center border-0 shadow-sm">
+        <img src="imagens/condicionadorbarba.jpg" class="card-img-top" alt="Condicionador de Barba">
+        <div class="card-body">
+          <h5 class="card-title nome-produto">Condicionador de Barba</h5>
+          <p class="card-text descricao-produto">Fechar poros.</p>
+          <p class="h6 text-warning">R$ 49,90</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 produto shampoo">
+      <div class="card h-100 text-center border-0 shadow-sm">
+        <img src="imagens/Shampoobarba.jpg" class="card-img-top" alt="Shampoo de Barba">
+        <div class="card-body">
+          <h5 class="card-title nome-produto">Shampoo de Barba</h5>
+          <p class="card-text descricao-produto">Abrir poros</p>
+          <p class="h6 text-warning">R$ 49,90</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 produto shampoo">
+      <div class="card h-100 text-center border-0 shadow-sm">
+        <img src="imagens/oleobarba.jpg" class="card-img-top" alt="Óleo de Barba">
+        <div class="card-body">
+          <h5 class="card-title nome-produto">Óleo de Barba</h5>
+          <p class="card-text descricao-produto">Fórmula de macieis.</p>
+          <p class="h6 text-warning">R$ 39,90</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 produto shampoo">
+      <div class="card h-100 text-center border-0 shadow-sm">
+        <img src="imagens/gelbarbear.jpg" class="card-img-top" alt="Gel de Barbear Transparente">
+        <div class="card-body">
+          <h5 class="card-title nome-produto">Gel de Barbear Transparente</h5>
+          <p class="card-text descricao-produto">Fórmula refrescante.</p>
+          <p class="h6 text-warning">R$ 29,90</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 produto pomada">
+      <div class="card h-100 text-center border-0 shadow-sm">
+        <img src="imagens/pentemadeira.jpg" class="card-img-top" alt="Pente de Madeira">
+        <div class="card-body">
+          <h5 class="card-title nome-produto">Pente de Madeira</h5>
+          <p class="card-text descricao-produto">Bom para barba</p>
+          <p class="h6 text-primary">R$ 19,90</p>
         </div>
       </div>
     </div>
