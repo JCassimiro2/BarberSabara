@@ -70,6 +70,15 @@
     <p>Escolha um dia disponível e agende agora mesmo:</p>
     <a href="https://wa.me/44997285321?text=Olá!%20Gostaria%20de%20agendar%20um%20horário%20com%20você." target="_blank" class="btn-zap">Agendar pelo WhatsApp</a>
   </div>
+  <section class="horario-funcionamento">
+  <h2>Horário de Funcionamento</h2>
+  <ul>
+    <li><strong>Terça a Sexta:</strong> 08:00 às 12:00 e 13:30 às 18:30</li>
+    <li><strong>Sábado:</strong> 11:30 às 14:00 e 14:00 às 20:30</li>
+    <li><strong>Domingo:</strong> Fechado</li>
+  </ul>
+</section>
+
 </section>
 
 </body>

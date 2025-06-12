@@ -73,7 +73,6 @@
         <li><a href="#">Shampoo de Barba</a></li>
         <li><a href="#">Óleo de Barba</a></li>
         <li><a href="#">Shampoo com Carvão Ativado</a></li>
-        <li><a href="#">Máscara de Hidratação</a></li>
         <li><a href="#">Pasta Modeladora</a></li>
         <li><a href="#">Gel de Barbear Transparente</a></li>
       </ul>
@@ -97,7 +96,7 @@
 <!-- Produtos -->
 <div class="container my-5">
   <div class="row justify-content-center g-4" id="lista-produtos">
-    <div class="col-6 col-sm-4 col-md-3 produto pomada">
+    <div class="col-6 col-sm-4 col-md-3"  data-nome="produto pomada">
       <div class="card h-100 text-center border-0 shadow-sm">
         <img src="imagens/pomada.jpg" class="card-img-top" alt="Pomada Modeladora">
         <div class="card-body">
@@ -107,7 +106,7 @@
         </div>
       </div>
     </div>
-    <div class="col-6 col-sm-4 col-md-3 produto minoxidil">
+    <div class="col-6 col-sm-4 col-md-3" data-nome="produto minoxidil">
       <div class="card h-100 text-center border-0 shadow-sm">
         <img src="imagens/Minoxidil.jpg" class="card-img-top" alt="Minoxidil">
         <div class="card-body">
@@ -117,7 +116,7 @@
         </div>
       </div>
     </div>
-    <div class="col-6 col-sm-4 col-md-3 produto shampoo">
+    <div class="col-6 col-sm-4 col-md-3" data-nome="produto shampoo">
       <div class="card h-100 text-center border-0 shadow-sm">
         <img src="imagens/shampoo.jpg" class="card-img-top" alt="Shampoo Anticaspa">
         <div class="card-body">
@@ -127,7 +126,7 @@
         </div>
       </div>
     </div>
-    <div class="col-6 col-sm-4 col-md-3 produto shampoo">
+    <div class="col-6 col-sm-4 col-md-3" data-nome="produto condicionador">
       <div class="card h-100 text-center border-0 shadow-sm">
         <img src="imagens/condicionadorbarba.jpg" class="card-img-top" alt="Condicionador de Barba">
         <div class="card-body">
@@ -137,7 +136,7 @@
         </div>
       </div>
     </div>
-    <div class="col-6 col-sm-4 col-md-3 produto shampoo">
+    <div class="col-6 col-sm-4 col-md-3" data-nome="produto shampoo">
       <div class="card h-100 text-center border-0 shadow-sm">
         <img src="imagens/Shampoobarba.jpg" class="card-img-top" alt="Shampoo de Barba">
         <div class="card-body">
@@ -147,7 +146,7 @@
         </div>
       </div>
     </div>
-    <div class="col-6 col-sm-4 col-md-3 produto shampoo">
+    <div class="col-6 col-sm-4 col-md-3" data-nome="produto óleo">
       <div class="card h-100 text-center border-0 shadow-sm">
         <img src="imagens/oleobarba.jpg" class="card-img-top" alt="Óleo de Barba">
         <div class="card-body">
@@ -157,7 +156,7 @@
         </div>
       </div>
     </div>
-    <div class="col-6 col-sm-4 col-md-3 produto shampoo">
+    <div class="col-6 col-sm-4 col-md-3" data-nome="produto gel">
       <div class="card h-100 text-center border-0 shadow-sm">
         <img src="imagens/gelbarbear.jpg" class="card-img-top" alt="Gel de Barbear Transparente">
         <div class="card-body">
@@ -167,13 +166,23 @@
         </div>
       </div>
     </div>
-    <div class="col-6 col-sm-4 col-md-3 produto pomada">
+    <div class="col-6 col-sm-4 col-md-3" data-nome="produto pente">
       <div class="card h-100 text-center border-0 shadow-sm">
         <img src="imagens/pentemadeira.jpg" class="card-img-top" alt="Pente de Madeira">
         <div class="card-body">
           <h5 class="card-title nome-produto">Pente de Madeira</h5>
           <p class="card-text descricao-produto">Bom para barba</p>
           <p class="h6 text-primary">R$ 19,90</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3" data-nome="produto minoxidil">
+      <div class="card h-100 text-center border-0 shadow-sm">
+        <img src="imagens/caixaminoxidil.jpg" class="card-img-top" alt="Caixa de Minoxidil">
+        <div class="card-body">
+          <h5 class="card-title nome-produto">Caixa de Minoxidil</h5>
+          <p class="card-text descricao-produto">Contem 6 unidiades de 60ml</p>
+          <p class="h6 text-primary">R$ 199,90</p>
         </div>
       </div>
     </div>
@@ -224,6 +233,28 @@
     submenuProdutos.classList.toggle('aberto');
   });
 </script>
+
+<script>
+  function filtrarProduto(nomeProduto) {
+    const produtos = document.querySelectorAll('.produto');
+    produtos.forEach(produto => {
+      const nome = produto.getAttribute('data-nome');
+      if (nome === nomeProduto.toLowerCase()) {
+        produto.style.display = 'block';
+      } else {
+        produto.style.display = 'none';
+      }
+    });
+  }
+
+  function mostrarTodos() {
+    const produtos = document.querySelectorAll('.produto');
+    produtos.forEach(produto => {
+      produto.style.display = 'block';
+    });
+  }
+</script>
+  
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

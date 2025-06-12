@@ -129,6 +129,33 @@ body {
   background-color: #1ebe5d;
 }
 
+.horario-funcionamento {
+  margin: 40px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.horario-funcionamento h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.horario-funcionamento ul {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  color: #444;
+}
+
+.horario-funcionamento li {
+  margin-bottom: 10px;
+}
+
+
 /* Responsivo */
 @media (max-width: 600px) {
   .card-servico {
