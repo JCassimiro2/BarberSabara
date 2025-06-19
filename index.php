@@ -8,32 +8,32 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-
   <div id="transicao" style="display: none;"></div>
-
   <div id="conteudo-principal">
-    <header class="reveal bg-dark text-white py-2">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-  <img src="imagens/LogoBarbearia.png" alt="Barbearia Sabará" class="logo-img">
-</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                <li class="nav-item"><a class="nav-link" href="#estabelecimento">Estabelecimento</a></li>
-                <li class="nav-item"><a class="nav-link" href="#Galeria">Galeria</a></li>
-                <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+    <header class="reveal bg-dark text-white py-2 shadow-sm custom-header">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="imagens/LogoBarbearia.png" alt="Barbearia Sabará" class="logo-img me-2">
+          <span class="fs-4 fw-bold">Barbearia Sabará</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#estabelecimento">Estabelecimento</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Galeria">Galeria</a></li>
+            <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
+          </ul>
+        </div>
       </div>
-    </header>
+    </nav>
+  </div>
+</header>
+
 
     <section class="reveal py-5 bg-light" id="servicos">
       <div class="container">
@@ -85,35 +85,50 @@
     </section>
 
     <section class="galeria" id="Galeria">
-      <h2>Nossa Galeria</h2>
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="imagens/americano.jpg" class="d-block w-100" alt="Americano">
-          </div>
-          <div class="carousel-item">
-            <img src="imagens/lowfade.jpg" class="d-block w-100" alt="Low-Fade">
-          </div>
-          <div class="carousel-item">
-            <img src="imagens/midfade.jpg" class="d-block w-100" alt="Mid-Fade">
-          </div>
-          <div class="carousel-item">
-            <img src="imagens/buzzcut.jpg" class="d-block w-100" alt="Buzz Cut">
-          </div>
-          <div class="carousel-item">
-            <img src="imagens/highfade.jpg" class="d-block w-100" alt="High-Fade">
-          </div>
+  <div class="container">
+    <h2 class="text-center mb-4">Nossa Galeria</h2>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active text-center">
+          <img src="imagens/americano.jpg" class="d-block w-100 corte-img-carousel" alt="Americano">
+          <p class="nome-corte-carousel">Americano</p>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+
+        <div class="carousel-item text-center">
+          <img src="imagens/lowfade.jpg" class="d-block w-100 corte-img-carousel" alt="Low-Fade">
+          <p class="nome-corte-carousel">Low Fade</p>
+        </div>
+
+        <div class="carousel-item text-center">
+          <img src="imagens/midfade.jpg" class="d-block w-100 corte-img-carousel" alt="Mid-Fade">
+          <p class="nome-corte-carousel">Mid Fade</p>
+        </div>
+
+        <div class="carousel-item text-center">
+          <img src="imagens/buzzcut.jpg" class="d-block w-100 corte-img-carousel" alt="Buzz Cut">
+          <p class="nome-corte-carousel">Buzz Cut</p>
+        </div>
+
+        <div class="carousel-item text-center">
+          <img src="imagens/highfade.jpg" class="d-block w-100 corte-img-carousel" alt="High-Fade">
+          <p class="nome-corte-carousel">High Fade</p>
+        </div>
+
       </div>
-    </section>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+  </div>
+</section>
+
 
     <!-- Formulário único, funcionando e com mensagem de sucesso -->
     <section class="mensagem" id="feedback">
