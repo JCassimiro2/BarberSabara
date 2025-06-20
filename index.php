@@ -11,29 +11,28 @@
   <div id="transicao" style="display: none;"></div>
   <div id="conteudo-principal">
     <header class="reveal bg-dark text-white py-2 shadow-sm custom-header">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="imagens/LogoBarbearia.png" alt="Barbearia Sabará" class="logo-img me-2">
-          <span class="fs-4 fw-bold">Barbearia Sabará</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-            <li class="nav-item"><a class="nav-link" href="#estabelecimento">Estabelecimento</a></li>
-            <li class="nav-item"><a class="nav-link" href="#Galeria">Galeria</a></li>
-            <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
-          </ul>
-        </div>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+              <img src="imagens/LogoBarbearia.png" alt="Barbearia Sabará" class="logo-img me-2">
+              <span class="fs-4 fw-bold">Barbearia Sabará</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#estabelecimento">Estabelecimento</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
-    </nav>
-  </div>
-</header>
-
+    </header>
 
     <section class="reveal py-5 bg-light" id="servicos">
       <div class="container">
@@ -82,96 +81,116 @@
           <div class="col-md-6">
             <div class="info-estab text-center text-md-start">
               <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="galeria" id="Galeria">
-  <div class="container">
-    <h2 class="text-center mb-4">Nossa Galeria</h2>
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
+      <div class="container">
+        <h2 class="text-center mb-4">Nossa Galeria</h2>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
 
-        <div class="carousel-item active text-center">
-          <img src="imagens/americano.jpg" class="d-block w-100 corte-img-carousel" alt="Americano">
-          <p class="nome-corte-carousel">Americano</p>
+            <div class="carousel-item active text-center">
+              <img src="imagens/americano.jpg" class="d-block w-100 corte-img-carousel" alt="Americano"
+                   data-bs-toggle="modal" data-bs-target="#imagemModal" data-src="imagens/americano.jpg">
+              <p class="nome-corte-carousel">Americano</p>
+            </div>
+
+            <div class="carousel-item text-center">
+              <img src="imagens/lowfade.jpg" class="d-block w-100 corte-img-carousel" alt="Low-Fade"
+                   data-bs-toggle="modal" data-bs-target="#imagemModal" data-src="imagens/lowfade.jpg">
+              <p class="nome-corte-carousel">Low Fade</p>
+            </div>
+
+            <div class="carousel-item text-center">
+              <img src="imagens/midfade.jpg" class="d-block w-100 corte-img-carousel" alt="Mid-Fade"
+                   data-bs-toggle="modal" data-bs-target="#imagemModal" data-src="imagens/midfade.jpg">
+              <p class="nome-corte-carousel">Mid Fade</p>
+            </div>
+
+            <div class="carousel-item text-center">
+              <img src="imagens/buzzcut.jpg" class="d-block w-100 corte-img-carousel" alt="Buzz Cut"
+                   data-bs-toggle="modal" data-bs-target="#imagemModal" data-src="imagens/buzzcut.jpg">
+              <p class="nome-corte-carousel">Buzz Cut</p>
+            </div>
+
+            <div class="carousel-item text-center">
+              <img src="imagens/highfade.jpg" class="d-block w-100 corte-img-carousel" alt="High-Fade"
+                   data-bs-toggle="modal" data-bs-target="#imagemModal" data-src="imagens/highfade.jpg">
+              <p class="nome-corte-carousel">High Fade</p>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
         </div>
-
-        <div class="carousel-item text-center">
-          <img src="imagens/lowfade.jpg" class="d-block w-100 corte-img-carousel" alt="Low-Fade">
-          <p class="nome-corte-carousel">Low Fade</p>
-        </div>
-
-        <div class="carousel-item text-center">
-          <img src="imagens/midfade.jpg" class="d-block w-100 corte-img-carousel" alt="Mid-Fade">
-          <p class="nome-corte-carousel">Mid Fade</p>
-        </div>
-
-        <div class="carousel-item text-center">
-          <img src="imagens/buzzcut.jpg" class="d-block w-100 corte-img-carousel" alt="Buzz Cut">
-          <p class="nome-corte-carousel">Buzz Cut</p>
-        </div>
-
-        <div class="carousel-item text-center">
-          <img src="imagens/highfade.jpg" class="d-block w-100 corte-img-carousel" alt="High-Fade">
-          <p class="nome-corte-carousel">High Fade</p>
-        </div>
-
       </div>
 
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Próximo</span>
-      </button>
-    </div>
-  </div>
-</section>
-
+      <!-- Modal para ampliar imagem -->
+      <div class="modal fade" id="imagemModal" tabindex="-1" aria-labelledby="imagemModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content bg-transparent border-0">
+            <div class="modal-body p-0">
+              <img src="" id="imagemModalSrc" class="img-fluid rounded" alt="Imagem ampliada" />
+            </div>
+            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Formulário único, funcionando e com mensagem de sucesso -->
     <section class="mensagem" id="feedback">
       <h2>Deixe seu Feedback</h2>
-      <form action="processa_feedback.php#feedback" method="POST">
+      <form action="processa_feedback.php#feedback" method="POST" id="form-feedback">
         <input type="text" name="nome" placeholder="Nome" required>
         <input type="email" name="email" placeholder="Email" required>
         <textarea name="feedback" placeholder="Digite seu feedback" rows="5" required></textarea>
-         <button type="submit">Enviar</button>
+        <button type="submit">Enviar</button>
       </form>
 
       <?php
-  if (isset($_GET['sucesso']) && $_GET['sucesso'] === 'true') {
-    echo '
-      <div id="mensagem-enviada" class="mensagem-enviada">
-        ✅ Enviado com sucesso!
-      </div>';
-  }
-?>
+        if (isset($_GET['sucesso']) && $_GET['sucesso'] === 'true') {
+          echo '
+          <div id="mensagem-enviada" class="mensagem-enviada">
+            ✅ Enviado com sucesso!
+          </div>';
+        }
+      ?>
     </section>
   </div>
 
   <footer class="bg-dark text-white py-4">
-  <div class="container">
-    <div class="row text-center text-md-start align-items-center">
-      <div class="col-md-4 mb-3 mb-md-0">
-        <div class="footer-item">
-          <span>📷</span>
-          <a href="https://www.instagram.com/msabara_/" target="_blank">https://www.instagram.com/msabara_/</a>
+    <div class="container">
+      <div class="row text-center text-md-start align-items-center">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="footer-item">
+            <span>📷</span>
+            <a href="https://www.instagram.com/msabara_/" target="_blank">msabara_</a>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4 mb-3 mb-md-0">
-        <p class="footer-mensagem mb-0">Venha conhecer<br>nosso estabelecimento!</p>
-      </div>
-      <div class="col-md-4">
-        <div class="footer-item">
-          <span>📍</span>
-          <a href="https://www.google.com/maps?q=Av+Curitiba,+725+(sala01)" target="_blank">Av Curitiba , 725 (sala01)</a>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <p class="footer-mensagem mb-0">Venha conhecer<br>nosso estabelecimento!</p>
+        </div>
+        <div class="col-md-4">
+          <div class="footer-item">
+            <span>📍</span>
+            <a href="https://www.google.com/maps?q=Av+Curitiba,+725+(sala01)" target="_blank">Av Curitiba , 725 (sala01)</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
   <script>
     // animação de scroll
@@ -193,32 +212,31 @@
   </script>
 
   <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const logo = document.querySelector('.logo-img');
-    logo.addEventListener('click', function (e) {
-      e.preventDefault(); // evita comportamento padrão do link
-      
-      // Atualiza a imagem com timestamp pra evitar cache
-      const srcOriginal = this.getAttribute('src').split('?')[0];
-      this.setAttribute('src', srcOriginal + '?t=' + new Date().getTime());
+    document.addEventListener('DOMContentLoaded', function () {
+      const logo = document.querySelector('.logo-img');
+      logo.addEventListener('click', function (e) {
+        e.preventDefault(); // evita comportamento padrão do link
+        
+        // Atualiza a imagem com timestamp pra evitar cache
+        const srcOriginal = this.getAttribute('src').split('?')[0];
+        this.setAttribute('src', srcOriginal + '?t=' + new Date().getTime());
 
-      // Scroll para o topo suave
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+        // Scroll para o topo suave
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
     });
-  });
-</script>
+  </script>
 
   <script>
-  window.addEventListener('DOMContentLoaded', () => {
-    const msg = document.getElementById('mensagem-enviada');
-    if (msg) {
-      setTimeout(() => {
-        msg.style.display = 'none';
-      }, 5000);
-    }
-  });
-</script>
-
+    window.addEventListener('DOMContentLoaded', () => {
+      const msg = document.getElementById('mensagem-enviada');
+      if (msg) {
+        setTimeout(() => {
+          msg.style.display = 'none';
+        }, 5000);
+      }
+    });
+  </script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -251,20 +269,33 @@
     });
   </script>
 
- <script>
-  document.getElementById('form-feedback').addEventListener('submit', function (e) {
-    e.preventDefault();
+  <script>
+    document.getElementById('form-feedback').addEventListener('submit', function (e) {
+      e.preventDefault();
 
-    // Simula envio do formulário
-    document.getElementById('mensagem-sucesso').style.display = 'block';
+      // Simula envio do formulário
+      document.getElementById('mensagem-sucesso').style.display = 'block';
 
-    // Limpa os campos
-    this.reset();
+      // Limpa os campos
+      this.reset();
 
-    // Rola até a mensagem
-    document.getElementById("mensagem-sucesso").scrollIntoView({ behavior: "smooth" });
-  });
-</script>
+      // Rola até a mensagem
+      document.getElementById("mensagem-sucesso").scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+
+  <!-- Script para abrir imagem grande no modal -->
+  <script>
+    const imagemModal = document.getElementById('imagemModal');
+    const imagemModalSrc = document.getElementById('imagemModalSrc');
+
+    imagemModal.addEventListener('show.bs.modal', function (event) {
+      const triggerImg = event.relatedTarget; // imagem clicada
+      const src = triggerImg.getAttribute('data-src') || triggerImg.src;
+      imagemModalSrc.src = src;
+      imagemModalSrc.alt = triggerImg.alt;
+    });
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
