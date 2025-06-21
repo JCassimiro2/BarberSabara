@@ -72,20 +72,25 @@
     </section>
 
     <section class="reveal py-5" id="estabelecimento">
-      <div class="container">
-        <h2 class="text-center mb-4">Sobre nosso estabelecimento</h2>
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-5 mb-4">
-            <div class="foto-estab-esquerda mx-auto"></div>
-          </div>
-          <div class="col-md-6">
-            <div class="info-estab text-center text-md-start">
-              <p></p>
-            </div>
-          </div>
+  <div class="container">
+    <h2 class="text-center mb-4">Sobre nosso estabelecimento</h2>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-5 mb-4 text-center">
+        <div class="foto-estab-esquerda mx-auto">
+          <img src="imagens/estabelecimento.jpeg" alt="Dono da Barbearia" class="img-fluid rounded shadow">
         </div>
       </div>
-    </section>
+      <div class="col-md-6">
+        <div class="info-estab text-center text-md-start">
+          <p>
+            Este é o nosso espaço! Um ambiente moderno, confortável e pensado para proporcionar a melhor experiência aos nossos clientes. Venha nos visitar e sinta o cuidado em cada detalhe!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>    
+</section>
+
 
     <section class="galeria" id="Galeria">
       <div class="container">
