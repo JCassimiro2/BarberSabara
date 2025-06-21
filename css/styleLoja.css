@@ -304,25 +304,105 @@ body {
 
 /* Celulares */
 @media (max-width: 600px) {
-  /* esconder menu desktop */
+  /* Esconder menu desktop */
   .menu-nav {
     display: none;
   }
 
-  /* mostrar hambúrguer */
+  /* Mostrar botão hambúrguer */
   .btn-menu-hamburguer {
     display: block;
+    font-size: 2rem;
+    top: 10px;
+    right: 15px;
+    position: absolute;
+    z-index: 1100;
+    color: #000;
   }
 
+  /* Espaçamento extra no body para header fixo */
+  body {
+    padding-top: 70px; /* para header fixo não cobrir conteúdo */
+  }
+
+  /* Lista de produtos com gap menor */
   #lista-produtos {
     gap: 1rem;
+    padding: 0 1rem; /* para ter um espaçamento lateral no celular */
   }
 
+  /* Produtos ocupam 100% da largura do container */
   .produto {
     width: 100%;
   }
 
+  /* Imagem do card menor para caber melhor */
   .card-img-top {
-    height: 180px;
+    height: 160px;
+    object-fit: contain;
+    padding: 10px;
+  }
+
+  /* Ajustes no card para conforto visual */
+  .card {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+
+  /* Fonte menor para títulos e descrições */
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .preco {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 0.3rem;
+  }
+
+  /* Campo de pesquisa ocupando toda largura com padding */
+  #campo-pesquisa {
+    width: 100% !important;
+    max-width: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 25px;
+  }
+
+  /* Mensagens de filtro e não encontrado centralizadas e com padding */
+  #mensagem-nao-encontrado,
+  #mensagem-filtro {
+    font-size: 1rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  /* Botão voltar mais acessível */
+  .voltar-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    z-index: 1100;
+  }
+
+  /* Ajuste no painel lateral (menu hambúrguer) */
+  .painel-lateral {
+    width: 100%;
+    right: -100%;
+    transition: right 0.3s ease;
+  }
+
+  .painel-lateral.aberto {
+    right: 0;
   }
 }
+
+
+
+
