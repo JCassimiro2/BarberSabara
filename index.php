@@ -62,7 +62,9 @@
         <h2>Veja um pouco sobre Mim</h2>
         <div class="row justify-content-center align-items-center my-4">
           <div class="col-12 col-md-4">
-            <div class="foto-sobre mx-auto"></div>
+            <div class="foto-sobre mx-auto">
+              <img src="imagens/barbeiro.jpeg" alt="Foto sobre mim" class="foto-sobre mx-auto">
+            </div>
           </div>
         </div>  
         <p class="Sobre-mim">Gosto de cuidar do meu visual, saúde e me divertir com os amigos,<br> sou focado em resultados e desempenho,
