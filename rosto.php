@@ -8,7 +8,7 @@
 </head>
 <body>
   <header class="header-cabelo">
-    <a href="serviços.php" class="voltar-btn">Voltar</a>
+    <a href="Serviços.php" class="voltar-btn">Voltar</a>
     <h1>Serviços de Rosto</h1>
   </header>
 
