@@ -10,6 +10,7 @@
   <title>BarbeariaSabará</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="Imagens/LogoBarbearia.png" rel="shortcut icon">
 </head>
 <body>
   <div id="transicao" style="display: none;"></div>
